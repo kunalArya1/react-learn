@@ -18,6 +18,7 @@ const Homepage = () => {
         // console.log(res.data);
         setdata(res.data);
       })
+        // error handling
       .catch((err) => {
         console.log(err);
         seterror(err);
