@@ -6,6 +6,7 @@ const Homepage = () => {
 
   // creating state to store data
   const [data, setdata] = useState([]);
+  // for error handling
   const [error, seterror] = useState("")
 
 
