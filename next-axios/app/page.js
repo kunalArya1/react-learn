@@ -13,7 +13,7 @@ const Homepage = () => {
   // fetching the data using Axios
   const alldata = () => {
     axios
-      .get("https://picsum.photos/v2/list?page=17&limit=18")
+      .get("https://picsum.photos/v2/list?page=15&limit=18")
       .then((res) => {
         // console.log(res.data);
         setdata(res.data);
