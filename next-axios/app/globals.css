@@ -6,6 +6,7 @@
 }html,body{
    height: 100%;
    width: 100%;
+   background-color: rgb(249, 240, 227);
 }
 .title{
   margin-top: 30px;
@@ -14,7 +15,7 @@
 }
 .image-div{
   padding: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: fit-content;
   border-radius: 10px;
   overflow: hidden;
