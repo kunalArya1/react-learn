@@ -7,13 +7,13 @@ const Homepage = () => {
   // creating state to store data
   const [data, setdata] = useState([]);
   // for error handling
-  const [error, seterror] = useState("")
+  const [error, seterror] = useState("");
 
 
   // fetching the data using Axios
   const alldata = () => {
     axios
-      .get("https://picsum.photos/v2/list?page=15&limit=18")
+      .get("https://picsum.photos/v2/list?page=7&limit=15")
       .then((res) => {
         // console.log(res.data);
         setdata(res.data);
@@ -24,6 +24,12 @@ const Homepage = () => {
         seterror(err);
       });
   };
+
+  // React paginate
+  const handlePageClick = (e) =>{
+    setpage(e.selected);
+    console.log(e);
+  }
 
   useEffect(() => {
     alldata();
@@ -40,6 +46,8 @@ const Homepage = () => {
     );
   });
 
+  
+
   // rendering the data
   return (
     <div>
@@ -48,6 +56,7 @@ const Homepage = () => {
 
       <hr />
       <div className="grid">{image}</div>
+      
     </div>
   );
 };

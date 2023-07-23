@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main{
+    display: flex; 
+}
+.nav{
+    height: 100vh;
+    width: 35vh;
+    background-color: rgb(110, 108, 108);
+    text-align: center;
+    padding: 4rem;
+    position: fixed;
+}
+
+.nav li{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+
