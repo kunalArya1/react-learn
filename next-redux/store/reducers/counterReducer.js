@@ -9,12 +9,15 @@ export const counterReducer = createSlice({
   initialState,
   reducers: {
     increment:(state,action)=>{
-        console.log(action);
+        // console.log(action);
         state.value += action.payload;
     },
     decrement :(state,action) =>{
-        console.log(action);
+        // console.log(action);
         state.value -= action.payload;
+    },
+    incrementBy5:(dispatch,getState) =>{
+        
     }
   },
 });
