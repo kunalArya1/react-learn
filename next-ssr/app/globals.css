@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.p-tag{
+  font-family: cursive;
+  font-size: 1.5rem;
+  margin: 1rem;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  color: brown;
+}
+
+.email-tag{
+  border: none;
+  font-family: cursive;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
