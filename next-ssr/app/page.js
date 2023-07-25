@@ -7,6 +7,8 @@ import { Use ,useState } from 'react';
 const getData = async () =>{
   try {
     const {data} =  await axios.get("https://jsonplaceholder.typicode.com/users");
+    // const {data} =  await axios.get("https://jsonplaceholder.typicode.com/users");
+
     return data;
   } catch (error) {
     return error;
@@ -18,17 +20,17 @@ const Homepage = () => {
   console.log(data);
 
   return (
-    <div>
-      {data.map((user)=>{
+    <>
+      {data.map((user,idx)=>{
           return (
             <div>
-            <p className='p-tag' key={user.id}>{user.name}</p>
-            <p className='email-tag' key={user.id}>{user.email}</p>
+            <p key={user.idx} className='p-tag' >{user.name}</p>
+            <p key={user.idx} className='email-tag' >{user.email}</p>
 
             </div>
             )
       })} 
-    </div>
+    </>
   )
 }
 
