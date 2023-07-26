@@ -23,11 +23,11 @@ const Homepage = () => {
     <>
       {data.map((user,idx)=>{
           return (
-            <div>
+            <>
             <p key={user.idx} className='p-tag' >{user.name}</p>
             <p key={user.idx} className='email-tag' >{user.email}</p>
 
-            </div>
+            </>
             )
       })} 
     </>
